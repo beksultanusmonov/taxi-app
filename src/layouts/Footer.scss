@@ -1,0 +1,22 @@
+footer{
+    height: 200px;
+    width: 100vw;
+    margin-top: 20px;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    display: flex;
+    padding: 20px 10px;
+
+     h1{
+        animation: viewHide 1s ease infinite;
+     }
+}
+
+@keyframes viewHide {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

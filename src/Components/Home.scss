@@ -34,6 +34,7 @@
                     border-radius: 35px;
                     font-size: 35px;
                     color: var(--dark-color);
+                    cursor: pointer;
 
                     &.active{
                         background-color: var(--white-color);
@@ -48,10 +49,12 @@
 
             .title{
                 font-size: 52px;
+                line-height: 55px;
             }
 
             .description{
                 font-size: 25px;
+                margin-bottom: 10px;
             }
 
             a{
@@ -67,6 +70,39 @@
                 font-size: 25px;
                 margin-bottom: 30px;
             }
+
+            .search{
+                position: relative;
+                width: 400px;
+                height: 60px;
+                background-color: var(--grey-color);
+                border-radius: 18px;
+                overflow: hidden;
+                margin-bottom: 10px;
+
+                input{
+                    width: 100%;
+                    height: 100%;
+                    background: transparent;
+                    color: var(--dark-color);
+                    font-size: 25px;
+                    border: none;
+                    padding-left: 15px;
+
+
+                    &::placeholder{
+                        color: var(--dark-color);
+                    }
+                }
+
+                i{
+                    position: absolute;
+                    right: 15px;
+                    top: 10px;
+                    color: var(--dark-color);
+                    font-size: 40px;
+                }
+            }
         }
 
         .image{
@@ -76,9 +112,75 @@
             img{
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
             }
         }
     }
+}
+
+// start to sections
+.sections{
+    padding: 100px 0 50px;
+    
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        div{
+            width: 100%;
+        }
+
+        .image{
+            width: 100%;
+            padding: 10px;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .info{
+            width: 100%;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-between;
+
+            .subtitle{
+                font-size: 45px;
+                margin-bottom: 20px;
+            }
+
+            .description{
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            a{
+                text-decoration: none;
+                background-color: var(--dark-color);
+                padding: 20px;
+                width: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 20px;
+                color: var(--white-color);
+                font-size: 22px;
+                font-weight: bold;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+.right-align{
+    padding: 0 20px 0 0;
+    align-items: flex-end;
+    text-align: right;
 }
 
 
@@ -110,6 +212,26 @@
 
             .image{
                 height: 400px;
+            }
+        }
+    }
+
+    .sections{
+        .container{
+            max-width: 991px;
+
+            .info{
+                .subtitle{
+                    margin-bottom: 10px;
+                }
+
+                .description{
+                    margin-bottom: 10px;
+                }
+
+                a{
+                    margin-top: 10px;
+                }
             }
         }
     }
@@ -152,6 +274,21 @@
             }
         }
     }
+
+    .sections{
+        .container{
+            max-width: 768px;
+            display: block;
+
+            .info{
+                margin-top: 40px;
+            }
+
+            .image{
+                margin-top: 10px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -160,14 +297,33 @@
             max-width: 500px;
         }
     }
+
+    .sections{
+        padding: 80px 0 10px;
+        .container{
+            max-width: 500px;
+
+            .info{
+                margin-top: 40px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 500px){
     .home {
         .container{
             .info{
+                padding-left: 10px;
+
+                .title{
+                    font-size: 30px;
+                }
+
                 .choose{
                     gap: 15px;
+                    padding-top: 10px;
+
                     .button{
                         padding: 5px 15px;
                         font-size: 30px;
@@ -176,6 +332,43 @@
                             font-size: 35px;
                         }
                     }
+
+                }
+
+                .description{
+                    font-size: 20px;
+                }
+
+                a{
+                    padding: 15px;
+                }
+
+                .search{
+                    max-width: 96vw;
+                }
+            }
+
+            .image{
+                padding: 10px;
+            }
+        }
+    }
+    
+    .sections{
+        .container{
+            max-width: 991px;
+
+            .info{
+                .subtitle{
+                    font-size: 35px;
+                }
+
+                .description{
+                    font-size: 20px;
+                }
+
+                a{
+                    padding: 15px;
                 }
             }
         }
