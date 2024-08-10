@@ -14,7 +14,7 @@ function Header() {
     <header>
         <div className="container">
             <div className="brend">
-                <h1>Sultan Taxi</h1>
+                <h1>TaxiHopper</h1>
             </div>
             <div className="hamburger">
                 <i class="fa-solid fa-bars" onClick={() => changeNav()}></i>
