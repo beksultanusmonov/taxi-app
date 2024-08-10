@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Home.scss'
+import BestDriver from '../../assets/bestdriver.jpg'
 
 
 function Home() {
@@ -17,7 +18,7 @@ function Home() {
                     <Link>Complete next steps</Link>
                 </div>
                 <div className="image">
-                    <img src="../../assets/bestdriver.jpg" alt="" />
+                    <img src={BestDriver} alt="" />
                 </div>
             </div>
         </section>
