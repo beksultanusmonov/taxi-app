@@ -21,10 +21,10 @@ function Header() {
             </div>
             <div className={navActive == 'yes' ? 'menus active' : 'menus'}>
                 <i class="fa-solid fa-xmark" onClick={() => changeNav()}></i>
-                <NavLink>Home</NavLink>
+                <NavLink to='/'>Home</NavLink>
                 <NavLink>Location</NavLink>
                 <NavLink>Contact us</NavLink>
-                <NavLink>Sign Up</NavLink>
+                <NavLink to='/register'>Sign Up</NavLink>
             </div>
         </div>
     </header>

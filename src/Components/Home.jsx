@@ -27,7 +27,7 @@ function Home() {
                     </div>
                     <h1 className="title">Ready to start earning?</h1>
                     <p className="description">Driving with Uber can be a great way to earn on your terms.</p>
-                    <Link>Complete next steps</Link>
+                    <Link to='/register'>Complete next steps</Link>
                 </div>
                 }
                 {menu == 'reads' && 
